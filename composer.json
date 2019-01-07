@@ -1,0 +1,35 @@
+{
+  "name": "galbuquerque/test",
+  "description": "My first package",
+  "type": "library",
+  "license": "none",
+  "authors": [
+    {
+      "name": "Gustavo Albuquerque",
+      "email": "contato@gustavoalbuquerque.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "joshtronic/php-loremipsum": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "galbuquerque\\": "src/"
+    },
+    "files": [
+      "test.php"
+    ]
+  },
+  "scripts": {
+    "pre-install-cmd": "Scripts::begin()",
+    "post-install-cmd": "Scripts::end()",
+    "myphp": "@php script.php",
+    "tree": "@composer show -t",
+    "myinfo": [
+      "echo \"myinfo began\"",
+      "@tree",
+      "echo \"myinfo finished\""
+    ]
+  }
+}
