@@ -121,4 +121,6 @@ fromFiles();
 
 // TOPIC: publish a package
 // to public a package commit to github
-// 
+// submit to packagist
+// to make the package accessible out of "minimum-stability": "dev"; go to github and release a version
+// to make a commit update automatically a package, set a packagist webhook at github settings
